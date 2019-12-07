@@ -1,0 +1,41 @@
+#left-ear {
+  transform: translateY(0);
+  transition: .5s all linear;
+}
+
+#right-ear {
+  transform: translateY(0);
+  transition: .5s all linear;
+}
+
+.bear-head:hover #left-ear,
+.bear-head:hover #right-ear {
+  transform: translateY(-10px);
+  transition: .5s all linear;
+}
+
+#right-eye {
+  transform: translateX(-10px);
+  animation: move-eyes 3s infinite alternate;
+}
+
+#left-eye {
+  transform: translateX(-10px);
+  animation: move-eyes 3s infinite alternate;
+}
+
+@keyframes move-eyes {
+
+  0% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(10px);
+  }
+
+}
